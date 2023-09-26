@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "terms_of_sales",
+  "info": {
+    "singularName": "terms-of-sale",
+    "pluralName": "terms-of-sales",
+    "displayName": "Terms of Sale",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tos": {
+      "type": "richtext"
+    }
+  }
+}
