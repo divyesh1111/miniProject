@@ -56,18 +56,18 @@ const Header = () => {
 
     return (
         <div
-            className={`w-full h-[50px] md:h-[80px] bg-white flex items-center justify-between z-20 sticky top-0 transition-transform duration-500 ${show}`}
+            className={`w-full h-[50px] md:h-[80px] bg-white flex items-center justify-between drop z-20 sticky top-0 transition-transform duration-500 ${show}`}
         >
             <Wrapper className={`h-[60px] flex justify-between items-center`}>
                 <Link href="/">
-                    <img src="/logo.svg" className="w-[40px] md:w-[60px]" />
+                    <img src="/logo.svg" className="w-[40px] md:w-[60px] " />
                 </Link>
                 <Menu showCatMenu={showCatMenu} setShowCatMenu={setShowCatMenu} categories={categories} />
 
                 {mobileMenu && <MenuMobile showCatMenu={showCatMenu} setShowCatMenu={setShowCatMenu} setMobileMenu={setMobileMenu} categories={categories} />}
 
                 
-                <div className="flex ite gap-2 text-black">
+                <div className="flex ite gap-2 text-black bg-gray-100 rounded-3xl">
                 <Link href="/wishlist">
                         <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative ">
                             <IoMdHeartEmpty className="text-[19px] md:text-[24px]" />

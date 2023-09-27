@@ -6,7 +6,7 @@ import { fetchDataFromApi } from '@/utils/api';
 
 const termsOfUse = (tou) => {
   return (
-    <div>
+    <div className='h-screen'>
         <TermsOfUse tou={tou} />
     </div>
   )

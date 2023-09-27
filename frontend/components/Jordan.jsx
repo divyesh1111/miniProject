@@ -3,14 +3,7 @@ import Wrapper from "./Wrapper";
 import Link from "next/link";
 import Image from "next/image";
 
-import Menu from "./Menu";
-import {BsCart} from "react-icons/bs";
-import {IoMdHeartEmpty} from "react-icons/io";
-import {VscChromeClose} from "react-icons/vsc";
-import {BiMenuAltRight} from "react-icons/bi";
-import MenuMobile from "./MenuMobile";
-import {fetchDataFromApi} from "@/utils/api";
-import {useSelector} from "react-redux";
+
 
 const Jordan = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -42,7 +35,7 @@ const Jordan = () => {
       className={`w-full h-[30px] md:h-[40px] bg-white flex items-center justify-between z-20 sticky top-0 transition-transform duration-500 ${show}`}
     >
       <Wrapper
-        className={`h-[60px] flex justify-between items-center bg-gray-100 `}
+        className={`h-[60px] flex justify-between items-center bg-gradient-to-r from-cyan-400 to-gray-200   `}
       >
         <Link href="/">
           <Image
