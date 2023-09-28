@@ -6,9 +6,9 @@ const ProductCard = ({data: {attributes: p, id}}) => {
   return (
     <Link
       href={`/product/${p.slug}`}
-      className=" transform overflow-hidden bg-white duration-200 hover:scale-105 cursor-pointer  "
+      className=" transform overflow-hidden  duration-200 hover:scale-105 cursor-pointer  "
     >
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden rounded-2xl  ">
         <Image
           width={500}
           height={500}
@@ -17,9 +17,7 @@ const ProductCard = ({data: {attributes: p, id}}) => {
           alt={p.name}
         />
         <div className="absolute h-full w-full bg-black/20 flex items-center -bottom-10 hover:bottom-0 opacity-0 hover:opacity-100 transition-all duration-300  ">
-          <button className="mx-auto mt-[20rem] w-[10rem] py-2 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75 ">
-            Add To Cart
-          </button>
+          
         </div>
       </div>
 

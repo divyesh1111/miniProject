@@ -4,10 +4,11 @@ import Wrapper from "./Wrapper";
 import Link from "next/link";
 import about2 from "./../pages/about2";
 import privacy from "@/pages/privacy";
+import news from "@/pages/news";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white pt-14 pb-3">
+    <footer className="bg-gradient-to-r from-cyan-500 to-gray-300 text-black pt-14 pb-3">
       <Wrapper className="flex justify-between flex-col md:flex-row gap-[50px] md:gap-0">
         {/* LEFT START */}
         <div className="flex gap-[50px] md:gap-[75px] lg:gap-[100px] flex-col md:flex-row">
@@ -40,32 +41,30 @@ const Footer = () => {
             {/* MENU START */}
             <div className="flex flex-col gap-3">
               <Link href="/help">
-                <div className="font-oswald font-medium uppercase text-sm">
+                <div className="font-oswald font-medium uppercase text-sm ">
                   get help
                 </div>
               </Link>
 
-              <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
+              <div className="text-sm text-black/[0.5] hover:text-white cursor-pointer">
                 Order Status
               </div>
-              <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
+              <div className="text-sm text-black/[0.5] hover:text-white cursor-pointer">
                 Delivery
               </div>
-              <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
+              <div className="text-sm text-black/[0.5] hover:text-white cursor-pointer">
                 Returns
               </div>
-              <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
+              <div className="text-sm text-black/[0.5] hover:text-white cursor-pointer">
                 Payment Options
               </div>
 
               <Link href="/contactUs">
-                <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
+                <div className="text-sm text-black/[0.5] hover:text-white cursor-pointer">
                   Contact Us
                 </div>
               </Link>
-              <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                <Link href={`contactUs`}>Contact Us</Link>
-              </div>
+              
             </div>
             {/* MENU END */}
 
@@ -76,16 +75,18 @@ const Footer = () => {
                   About nike
                 </div>
               </Link>
-              <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                News
-              </div>
-              <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
+              <Link href="/news">
+                <div className="text-sm text-black/[0.5] hover:text-white cursor-pointer">
+                  News
+                </div>
+              </Link>
+              <div className="text-sm text-black/[0.5] hover:text-white cursor-pointer">
                 Careers
               </div>
-              <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
+              <div className="text-sm text-black/[0.5] hover:text-white cursor-pointer">
                 Investors
               </div>
-              <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
+              <div className="text-sm text-black/[0.5] hover:text-white cursor-pointer">
                 Sustainability
               </div>
             </div>
@@ -126,23 +127,23 @@ const Footer = () => {
       </Wrapper>
       <Wrapper className="flex justify-between mt-10 flex-col md:flex-row gap-[10px] md:gap-0">
         {/* LEFT START */}
-        <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left">
+        <div className="text-[12px] text-white hover:text-white cursor-pointer text-center md:text-left">
           © 2023 Nike, Inc. All Rights Reserved
         </div>
         {/* LEFT END */}
 
         {/* RIGHT START */}
         <div className="flex gap-2 md:gap-5 text-center md:text-left flex-wrap justify-center">
-          <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer">
+          <div className="text-[12px] text-black/[0.5] hover:text-black cursor-pointer font-semibold">
             <Link href={`guides`}>Guides</Link>
           </div>
-          <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer">
+          <div className="text-[12px] text-black/[0.5] hover:text-black cursor-pointer font-semibold">
           <Link href={`termsOfSale`}>Terms of Sale </Link>
           </div>
-          <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer">
+          <div className="text-[12px] text-black/[0.5] hover:text-black cursor-pointer font-semibold">
             <Link href={`termsOfUse`}>Terms of Use</Link>
           </div>
-          <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer">
+          <div className="text-[12px] text-black/[0.5] hover:text-black cursor-pointer font-semibold">
             <Link href={`privacy`}>Privacy Policy</Link>
           </div>
         </div>

@@ -4,7 +4,7 @@ import { fetchDataFromApi } from '@/utils/api';
 
 const termsOfSale = (tos) => {
   return (
-    <div>
+    <div className='h-screen'>
         <TermsOfSale tos={tos} />
     </div>
   )
