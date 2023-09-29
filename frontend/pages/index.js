@@ -3,7 +3,6 @@ import ProductCard from "@/components/ProductCard";
 import Wrapper from "@/components/Wrapper";
 import {fetchDataFromApi} from "@/utils/api";
 
-
 export default function Home({products}) {
   // traditional method of Java Script to fetch data but not efficient for SEO purpose
   // const [data, setData] = useState(null);
@@ -19,11 +18,11 @@ export default function Home({products}) {
   return (
     <main>
       <HeroBanner />
-      <Wrapper >
+      <Wrapper>
         {/* heading and paragaph start */}
         <div className="text-center max-w-[800px] mx-auto my-[50px] md:my-[80px]">
           <div className="text-[28px] md:text-[34px] mb-5 font-semibold leading-tight">
-            Change the way of your walk
+            Change your way of walk.
           </div>
           <div className="text-md md:text-xl">
             A lightweight Nike ZoomX midsole is combined with increased stack
@@ -36,7 +35,6 @@ export default function Home({products}) {
           {products?.data?.map((product) => (
             <ProductCard key={product?.id} data={product} />
           ))}
-          
         </div>
       </Wrapper>
     </main>
