@@ -10,7 +10,7 @@ import { Link } from "heroicons-react";
 const Contact = () => {
   return (
     <Wrapper>
-      <div className="text-center text-2xl md:text-[35px] font-bold py-4">
+      <div className="text-center text-2xl md:text-[35px] font-bold py-4 ">
         {" "}
         CONTACT US
       </div>

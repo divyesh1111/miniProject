@@ -33,7 +33,7 @@ const HeroBanner = () => {
       >
         <div>
           <Image
-            src="/slide-1.webp"
+            src="/slide-1.jpg"
             width={1360}
             height={768}
             alt="slide-1"
