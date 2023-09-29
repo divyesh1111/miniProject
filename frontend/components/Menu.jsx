@@ -5,7 +5,7 @@ import {BsChevronDown} from "react-icons/bs";
 const data = [
   {id: 1, name: "Home", url: "/"},
   {id: 2, name: "About", url: "/about2"},
-  {id: 3, name: "Categories", subMenu: true},
+  {id: 3, name: "Brands", subMenu: true},
   {id: 4, name: "Contact", url: "/contactUs"},
 ];
 
@@ -18,13 +18,13 @@ const subMenuData = [
 
 const Menu = ({showCatMenu, setShowCatMenu, categories}) => {
   return (
-    <ul className="hidden md:flex items-center gap-8 font-medium text-black">
+    <ul className="hidden md:flex items-center md:bg-gray-100 md:rounded-full md:py-2 md:px-16 md:drop-shadow-lg gap-8 font-medium text-black">
       {data.map((item) => {
         return (
           <React.Fragment key={item.id}>
             {!!item?.subMenu ? (
               <li
-                className="cursor-pointer flex items-center gap-2 relative"
+                className="cursor-pointer flex items-center flex-col-2 gap-2 relative"
                 onMouseEnter={() => setShowCatMenu(true)}
                 onMouseLeave={() => setShowCatMenu(false)}
               >

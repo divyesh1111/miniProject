@@ -67,7 +67,7 @@ const Header = () => {
                 {mobileMenu && <MenuMobile showCatMenu={showCatMenu} setShowCatMenu={setShowCatMenu} setMobileMenu={setMobileMenu} categories={categories} />}
 
                 
-                <div className="flex ite gap-2 text-black bg-gray-100 rounded-3xl">
+                <div className="flex ite gap-2 text-black md:bg-gray-100 md:shadow-lg md:rounded-3xl">
                 <Link href="/wishlist">
                         <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative ">
                             <IoMdHeartEmpty className="text-[19px] md:text-[24px]" />

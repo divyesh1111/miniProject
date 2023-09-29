@@ -10,11 +10,11 @@ import { Link } from "heroicons-react";
 const Contact = () => {
   return (
     <Wrapper>
-      <div className="text-center text-2xl md:text-[35px] font-bold py-4 ">
-        {" "}
+      <div className="text-center text-2xl md:text-[35px] font-bold py-4">
+        
         CONTACT US
       </div>
-      <div className=" text-justify mx-auto px-6 py-6 h-[100%] w-[100] border border-gray-900 rounded-3xl  my-8">
+      <div className=" text-justify mx-auto px-6 py-6 h-[100%] w-[100] border bg-gradient-to-l from-gray-100 to-white border-gray-900 rounded-3xl  my-8">
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 py-3 px-3">
           <div className="text-center justify-center flex flex-col my-4 mb-4">
             <div className="justify-center flex">

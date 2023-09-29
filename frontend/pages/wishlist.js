@@ -56,7 +56,7 @@ const wishlist = () => {
               height={300}
               className="w-[300px] md:w-[400px]"
             />
-            <span className="text-xl font-bold">Your Wishlist is empty</span>
+            <span className="text-xl font-bold">You don't add any itmes on your Wishlist</span>
             <span className="text-center mt-4">
               Looks like you have not added anything in your wishlist.
               <br />

@@ -5,7 +5,7 @@ import React from 'react'
 
 const privacy = (pap) => {
   return (
-    <div className='h-screen'>
+    <div className=''>
         <PrivacyPolicy pap={pap} />
     </div>
   )

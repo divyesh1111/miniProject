@@ -1,9 +1,10 @@
 import HeroBanner from "@/components/HeroBanner";
+import Poster from "@/components/Poster";
 // import ProductCard from "@/components/ProductCard";
 import Wrapper from "@/components/Wrapper";
 // import {fetchDataFromApi} from "@/utils/api";
-
-export default function Home({products}) {
+import Image from "next/image";
+export default function Home({ products }) {
   // traditional method of Java Script to fetch data but not efficient for SEO purpose
   // const [data, setData] = useState(null);
 
@@ -18,9 +19,7 @@ export default function Home({products}) {
   return (
     <main>
       <HeroBanner />
-      <HeroBanner />
-      <HeroBanner />
-      <HeroBanner />
+
       <Wrapper>
         {/* heading and paragaph start */}
         <div className="text-center max-w-[800px] mx-auto my-[50px] md:my-[80px]">
@@ -33,6 +32,7 @@ export default function Home({products}) {
             running.
           </div>
         </div>
+        
         {/* heading and paragaph end */}
         {/* <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 my-14 px-5 md:px-0">
           {products?.data?.map((product) => (
