@@ -8,8 +8,8 @@ import news from "@/pages/news";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-cyan-500 to-gray-300 text-black pt-14 pb-3">
-      <Wrapper className="flex justify-between flex-col md:flex-row gap-[50px] md:gap-0">
+    <footer className=" text-black pt-14 pb-3">
+      <Wrapper className="flex justify-between pt-10 flex-col md:flex-row gap-[50px] md:gap-0 bg-gradient-to-r from-cyan-500 to-gray-300">
         {/* LEFT START */}
         <div className="flex gap-[50px] md:gap-[75px] lg:gap-[100px] flex-col md:flex-row">
           {/* MENU START */}
@@ -125,7 +125,7 @@ const Footer = () => {
         </div>
         {/* RIGHT END */}
       </Wrapper>
-      <Wrapper className="flex justify-between mt-10 flex-col md:flex-row gap-[10px] md:gap-0">
+      <Wrapper className="flex justify-between pt-10 pb-4 flex-col md:flex-row gap-[10px] md:gap-0 bg-gradient-to-r from-cyan-500 to-gray-300">
         {/* LEFT START */}
         <div className="text-[12px] text-white hover:text-white cursor-pointer text-center md:text-left">
           © 2023 Nike, Inc. All Rights Reserved
