@@ -16,7 +16,7 @@ const ProductCard = ({data: {attributes: p, id}}) => {
           src={p.thumbnail.data.attributes.url}
           alt={p.name}
         />
-        <div className="absolute h-full w-full bg-black/20 flex items-center -bottom-10 hover:bottom-0 opacity-0 hover:opacity-100 transition-all duration-300  ">
+        <div className="absolute h-full w-full bg-black/20 flex items-center -bottom-10 hover:bottom-0 opacity-0  hover:opacity-100 transition-all duration-100  ">
           
         </div>
       </div>
