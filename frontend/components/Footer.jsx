@@ -14,9 +14,11 @@ const Footer = () => {
         <div className="flex gap-[50px] md:gap-[75px] lg:gap-[100px] flex-col md:flex-row">
           {/* MENU START */}
           <div className="flex flex-col gap-3 shrink-0">
+            <Link href="https://www.google.com/maps/search/Nike+Store+in+india/@20.9360714,72.9527492,7.25z?entry=ttu">
             <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
               Find a store
             </div>
+            </Link>
             <Link href="/signup">
               <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
                 become a partner
