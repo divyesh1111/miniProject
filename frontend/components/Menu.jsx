@@ -18,20 +18,20 @@ const subMenuData = [
 
 const Menu = ({showCatMenu, setShowCatMenu, categories}) => {
   return (
-    <ul className="hidden md:flex items-center md:bg-gray-100 md:rounded-full md:py-2 md:px-16 md:drop-shadow-lg gap-8 font-medium text-black">
+    <ul className="hidden md:flex items-center md:bg-gradient-to-r from-gray-100 to-gray-100  md:rounded-full md:py-2 md:px-16 md:drop-shadow-lg gap-8 font-medium text-black  ">
       {data.map((item) => {
         return (
           <React.Fragment key={item.id}>
             {!!item?.subMenu ? (
               <li
-                className="cursor-pointer flex items-center flex-col-2 gap-2 relative"
+                className="cursor-pointer flex items-center flex-col-2 gap-2 relative "
                 onMouseEnter={() => setShowCatMenu(true)}
                 onMouseLeave={() => setShowCatMenu(false)}
               >
                 {item.name}
                 <BsChevronDown size={14} />
                 {showCatMenu && (
-                  <ul className="bg-gray-100 rounded-2xl absolute top-6 left-0 min-w-[250px] px-1 py-1 text-black shadow-lg">
+                  <ul className="bg-gradient-to-r from-gray-100 to-gray-100  rounded-2xl absolute top-6 left-0 min-w-[250px] px-1 py-1 text-black shadow-lg">
                     {categories?.map(({attributes: c, id}) => {
                       return (
                         <Link
@@ -41,7 +41,7 @@ const Menu = ({showCatMenu, setShowCatMenu, categories}) => {
                         >
                           <li
                             className="h-12 flex justify-between items-center px-3
-                                                            hover:bg-black/[0.03] rounded-md"
+                                                            hover:bg-red-400 rounded-md"
                           >
                             {c.name}
                             <span className="opacity-50 text-sm">{`(${c.products.data.length})`}</span>

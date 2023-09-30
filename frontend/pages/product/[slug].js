@@ -70,7 +70,7 @@ const ProductDetails = ({product, products}) => {
                   <p className="text-base font-medium line-through ">
                     &#8377; {p.original_price}
                   </p>
-                  <p className="ml-auto text-base font-medium text-green-500">
+                  <p className="ml-auto text-base font-medium text-red-500">
                     {getDiscountedPricePercentage(p.original_price, p.price)}
                     %off
                   </p>
