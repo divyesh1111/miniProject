@@ -31,7 +31,7 @@ const Menu = ({showCatMenu, setShowCatMenu, categories}) => {
                 {item.name}
                 <BsChevronDown size={14} />
                 {showCatMenu && (
-                  <ul className="bg-gray-100 rounded-2xl absolute top-14 left-0 min-w-[250px] px-1 py-1 text-black shadow-lg">
+                  <ul className="bg-gray-100 rounded-2xl absolute top-6 left-0 min-w-[250px] px-1 py-1 text-black shadow-lg">
                     {categories?.map(({attributes: c, id}) => {
                       return (
                         <Link
