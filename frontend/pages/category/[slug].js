@@ -27,7 +27,7 @@ const category = ({category, products, slug}) => {
     <div className="w-full md:py-20 relative">
       <Wrapper>
         <div className="text-center max-w-[500px] mx-auto mt-8 md:mt-0">
-          <div className="text-[40px] md:text-[50px]  mb-5 py-10 rounded-full font-extrabold drop-shadow-xl bg-black  leading-tight text-red-500 capitalize">
+          <div className="text-[40px] md:text-[50px]  mb-5 rounded-full font-extrabold drop-shadow-xl  leading-tight text-red-500 capitalize">
             {category?.data?.[0]?.attributes?.name}
           </div>
         </div>
