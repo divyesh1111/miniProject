@@ -17,23 +17,23 @@ const HeroBanner = () => {
         renderArrowPrev={(clickHandler, hasPrev) => (
           <div
             onClick={clickHandler}
-            className="absolute right-[31px] md:right-[51px] bottom-0 w-[30px] md:w-[50px] h-[30px] md:h-[50px] bg-black rounded-l-full z-10 flex items-center justify-center cursor-pointer hover:opacity-90"
+            className="absolute  bottom-[50%] w-[30px] md:w-[70px] ml-3 h-[30px] md:h-[50px]  rounded-l-full z-10 flex items-center justify-center cursor-pointer hover:opacity-70 "
           >
-            <BiArrowBack className="text-sm md:text-lg" />
+            <BiArrowBack className="text-l md:text-6xl  rounded-full text-white hover:bg-red-500  hover:text-white" />
           </div>
         )}
         renderArrowNext={(clickHandler, hasNext) => (
           <div
             onClick={clickHandler}
-            className="absolute right-0 bottom-0 w-[30px] md:w-[50px] h-[30px] md:h-[50px] bg-black rounded-r-full z-10 flex items-center justify-center cursor-pointer hover:opacity-90"
+            className="absolute right-0  w-[30px] mr-3 bottom-[50%] md:w-[70px] h-[30px] md:h-[50px]  rounded-r-full z-10 flex items-center justify-center cursor-pointer hover:opacity-70"
           >
-            <BiArrowBack className="rotate-180 text-sm md:text-lg" />
+            <BiArrowBack className="rotate-180 text-l md:text-6xl rounded-full text-white hover:bg-red-500  hover:text-white" />
           </div>
         )}
       >
-        {/* <div>
+        <div>
           <Image
-            src="/slide-1.jpg"
+            src="/Pos-1.jpg"
             width={1360}
             height={768}
             alt="slide-1"
@@ -44,11 +44,11 @@ const HeroBanner = () => {
           <div className="px-[15px] md:px-[40px] py-[10px] md:py-[25px] font-oswald bg-white absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[15px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
             Shop now
           </div>
-        </div> */}
+        </div>
 
         <div>
           <Image
-            src="/slide-2.webp"
+            src="/Pos-2.jpg"
             width={1360}
             height={768}
             loading="lazy"
@@ -62,7 +62,7 @@ const HeroBanner = () => {
 
         <div>
           <Image
-            src="/slide-3.webp  "
+            src="/Pos-3.jpg  "
             width={1360}
             height={768}
             loading="lazy"
