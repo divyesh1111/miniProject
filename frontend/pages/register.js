@@ -35,7 +35,7 @@ const register = () => {
 
         <section className="w-3/4 mx-auto flex flex-col gap-10">
           <div className="title">
-            <h1 className="text-black text-4xl font-bold py-4">SIGN UP</h1>
+            <h1 className=" text-4xl font-bold py-4 text-red-500">SIGN UP</h1>
           </div>
           <form className="flex flex-col gap-5" onSubmit={formik.handleSubmit}>
             {/* Inupt Groups */}
